@@ -5,9 +5,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Youtube Mobile</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
 </head>
 
 <body>
+  <!-- Header -->
   <header>
     <div class="logo">
       <i class="fab fa-youtube"></i>
@@ -18,11 +24,99 @@
       <i class="fas fa-ellipsis-v"></i>
     </div>
   </header>
+  <!-- Video player -->
   <section class="player">
     <video controls src="video/video.mp4"></video>
   </section>
-  <section class="info"></section>
-  <section class="upNext"></section>
+  <!-- Video Info -->
+  <section class="info">
+    <div class="metadata">
+      <ul class="hashtags">
+        <li>#DreamCoding</li>
+        <li>#DreamCoders</li>
+        <li>#Hyunji</li>
+      </ul>
+      <div class="titleAndBtn">
+        <span class="title">
+          Clone Coding: Youtube Mobile Website
+        </span>
+        <button class="moreBtn">
+          <i class="fas fa-caret-down"></i>
+        </button>
+      </div>
+      <div class="views">
+        <span class="views">1M 1 month ago</span>
+      </div>
+    </div>
+    <div class="actions">
+      <li>
+        <button>
+          <i class="fas fa-thumbs-up"></i><span>1K</span>
+        </button>
+      </li>
+      <li>
+        <button>
+          <i class="fas fa-thumbs-down"></i><span>0</span>
+        </button>
+      </li>
+      <li>
+        <button>
+          <i class="fas fa-share"></i><span>Share</span>
+        </button>
+      </li>
+      <li>
+        <button>
+          <i class="fas fa-plus"></i><span>Save</span>
+        </button>
+      </li>
+      <li>
+        <button>
+          <i class="fab fa-font-awesome-flag"></i><span>Report</span>
+        </button>
+      </li>
+    </div>
+    <!-- Channel Description -->
+    <div class="channel">
+      <div class="metadata">
+        <img src="image/avatar.png" alt="">
+        <div class="info">
+          <span class="name">Hyunji Kim</span>
+          <span class="subscribers">1M subscribers</span>
+        </div>
+      </div>
+      <button class="subscribe">subscribe</button>
+    </div>
+  </section>
+  <!-- Up Next -->
+  <section class="upNext">
+    <span class="title">Up next</span>
+    <ul>
+      <li class="item">
+        <img src="image/thumbnail1.png" alt="">
+        <span class="title">
+          [playlist] Let's listen to cozy jazz together on Christmas.</span>
+        <span class="channel">네고막을책임져도될까</span>
+        <span class="views">149K views | 1 week ago</span>
+        <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+      </li>
+      <li class="item">
+        <img src="image/thumbnail2.png" alt="">
+        <span class="title">
+          웹사이트 따라만들기, 반응형 헤더편 | 프론트엔드 개발자 입문편: HTML, CSS, Javascript</span>
+        <span class="channel">드림코딩 by 엘리</span>
+        <span class="views">54K views | 9 months ago</span>
+        <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+      </li>
+      <li class="item">
+        <img src="image/thumbnail3.png" alt="">
+        <span class="title">
+          파이썬 코딩 무료 강의 (활용편2) - GUI 프로그래밍을 배우고 '여러 이미지 합치기' 프로그램을 함께 만들어요. [나도코딩]</span>
+        <span class="channel">나도코딩</span>
+        <span class="views">150K views | 6 months ago</span>
+        <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+      </li>
+    </ul>
+  </section>
 </body>
 
 </html>
