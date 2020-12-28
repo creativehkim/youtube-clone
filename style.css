@@ -78,7 +78,7 @@ header .icons .fa-search {
 
 
 /* Video info */
-.info {
+body > .info {
   padding: var(--padding);
 }
 
@@ -175,4 +175,56 @@ header .icons .fa-search {
   text-transform: uppercase;
   color: var(--color-red);
   font-size: var(--font-medium);
+}
+
+/* Up Next */
+
+.upNext {
+  padding: 0 var(--padding);
+}
+
+.upNext > .title {
+  font-size: var(--font-small);
+  color: var(--color-dark-grey);
+  margin-bottom: calc(var(--padding));
+}
+
+.upNext .item {
+  display: flex;
+  margin-top: var(--padding);
+}
+
+.upNext .item .img {
+  flex: 1 1 35%;
+  margin-right: var(--padding);
+}
+
+.upNext .item .img img {
+  width: 100%;
+
+}
+
+.upNext .item .info {
+  flex: 1 1 60%;
+}
+
+.upNext .item .moreBtn {
+  flex: 1 1 5%;
+}
+
+.upNext .item .info {
+  display: flex;
+  flex-direction: column;
+}
+
+.infoAndUpNext {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .infoAndUpNext {
+    flex-direction: row;
+    margin: var(--padding);
+  }
 }
